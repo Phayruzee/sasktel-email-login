@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.logo {
+    width: 100px; /* Reduce the size of the logo */
+    margin: 20px 0 10px 0; /* Adjust the margin to reduce space between logo and header */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main-header {
+    font-family: sans-serif;
+    font-weight: normal; /* Remove bold */
+    font-size: 40px;
+    text-align: center;
+    margin: 40px 0 10px 0; /* Adjust the margin to reduce space between header and container */
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background-color: transparent; 
+    box-shadow: none;
+    margin: 0 0 20px 0;
+    padding: 0 20px;
+}
+
+.login-box, .welcome-box {
+    padding: 20px;
+    width: 50%; /* Share the container 50/50 */
+}
+
+.login-box {
+    border-right: 1px solid #ddd;
+}
+
+.sub-header {
+    font-family: sans-serif;
+    font-weight: normal; /* Remove bold */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: calc(100% - 70px);
+    height: 30px; /* Set the height of the input fields to 30px */
+    padding: 5px; /* Adjust padding to fit the new height */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100% - 70px;
+    padding: 10px;
+    background-color: #d50072;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c40066;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #d50072;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.support-link {
+    color: #d50072;
+    text-decoration: none;
+}
+
+.support-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    background-color: #222;
+    color: white;
+    padding: 5px 0; /* Reduce the padding */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    font-size: 14px; /* Adjust font size if needed */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px; /* Reduce padding */
+}
+
+.footer-logo {
+    width: 80px; /* Reduce the size of the logo */
+}
